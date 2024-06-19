@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: f;" stylesheets="@../../../css/cssmenu.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyectoaula.ProductoController">
+   <children>
+      <VBox prefHeight="600.0" prefWidth="197.0" styleClass="shadow" stylesheets="@../../../css/cssmenu.css">
+         <children>
+            <HBox prefHeight="37.0" prefWidth="198.0">
+               <children>
+                  <TextField fx:id="txtbuscar" promptText="Buscar Producto">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <styleClass>
+                        <String fx:value="search-box" />
+                        <String fx:value="shadow" />
+                        <String fx:value="borde-redondeado" />
+                     </styleClass>
+                  </TextField>
+                  <ImageView fx:id="btnbuscar" fitHeight="27.0" fitWidth="28.0" onMouseClicked="#buscar" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../img/buscar.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <styleClass>
+                        <String fx:value="search-button" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </HBox>
+            <TextField fx:id="txtnombre" prefHeight="35.0" prefWidth="100.0" promptText="Nombre">
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+               <styleClass>
+                  <String fx:value="search-box" />
+                  <String fx:value="shadow" />
+                  <String fx:value="borde-redondeado" />
+               </styleClass>
+            </TextField>
+            <TextField fx:id="txtdescripcion" prefHeight="35.0" prefWidth="158.0" promptText="Descripcion">
+               <styleClass>
+                  <String fx:value="search-box" />
+                  <String fx:value="shadow" />
+                  <String fx:value="borde-redondeado" />
+               </styleClass>
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="txtcantidad" prefHeight="35.0" prefWidth="114.0" promptText="Cantidad">
+               <styleClass>
+                  <String fx:value="search-box" />
+                  <String fx:value="shadow" />
+                  <String fx:value="borde-redondeado" />
+               </styleClass>
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="txtprecio" prefHeight="35.0" prefWidth="158.0" promptText="Precio">
+               <styleClass>
+                  <String fx:value="search-box" />
+                  <String fx:value="shadow" />
+                  <String fx:value="borde-redondeado" />
+               </styleClass>
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" />
+               </VBox.margin>
+            </TextField>
+            <ComboBox fx:id="boxcategoria" onAction="#cargarTabla" prefWidth="150.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="20.0" right="10.0" />
+               </VBox.margin>
+               <styleClass>
+                  <String fx:value="comboBox" />
+                  <String fx:value="shadow" />
+                  <String fx:value="progress" />
+                  <String fx:value="borde-redondeado" />
+               </styleClass>
+            </ComboBox>
+            <Label fx:id="lblinfo" alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="214.0" />
+            <HBox prefHeight="38.0" prefWidth="198.0">
+               <children>
+                  <Button fx:id="btnañadir" mnemonicParsing="false" onAction="#añadirProducto" prefHeight="26.0" prefWidth="126.0" style="-fx-background-color: #00FC0F;" text="AÑADIR PRODUCTO">
+                     <styleClass>
+                        <String fx:value="add-btn" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="10.0" right="20.0" top="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <ImageView fx:id="info2" fitHeight="23.0" fitWidth="31.0" onMouseClicked="#info" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../img/informacion.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="20.0" right="10.0" top="20.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox prefHeight="38.0" prefWidth="198.0">
+               <children>
+                  <Button fx:id="btninfo" mnemonicParsing="false" onAction="#infoProducto" prefHeight="26.0" prefWidth="141.0" text="INFORMACION" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="10.0" top="20.0" />
+                     </HBox.margin>
+                     <styleClass>
+                        <String fx:value="add-btn" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                  </Button>
+                  <ImageView fx:id="info" fitHeight="23.0" fitWidth="31.0" onMouseClicked="#info" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../img/informacion.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="198.0" prefHeight="600.0" prefWidth="604.0">
+         <children>
+            <HBox prefHeight="68.0" prefWidth="604.0">
+               <children>
+                  <Label prefHeight="18.0" prefWidth="98.0" text="PRODUCTO:">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="lblproducto" prefHeight="18.0" prefWidth="210.0">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Pane prefHeight="37.0" prefWidth="344.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="594.0" prefWidth="603.0" styleClass="pane_11">
+               <children>
+                  <TableView fx:id="tablaproductos" prefHeight="542.0" prefWidth="599.0" style="-fx-background-color: #fff;">
+                     <styleClass>
+                        <String fx:value="pane_11" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                  </TableView>
+               </children>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </HBox>
+         </children>
+      </VBox>
+      <TextField fx:id="a" layoutX="-34.0" layoutY="-59.0" />
+      <TextField fx:id="e" layoutX="168.0" layoutY="-46.0" />
+   </children>
+</AnchorPane>

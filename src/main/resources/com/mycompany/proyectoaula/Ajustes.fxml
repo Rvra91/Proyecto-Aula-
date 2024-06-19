@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" stylesheets="@../../../css/cssmenu.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="com.mycompany.proyectoaula.AjustesController">
+   <children>
+      <StackPane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <HBox prefHeight="214.0" prefWidth="290.0" styleClass="shadow">
+               <children>
+                  <VBox prefHeight="400.0" prefWidth="165.0" stylesheets="@../../../css/cssmenu.css">
+                     <styleClass>
+                        <String fx:value="shadow" />
+                        <String fx:value="pane_11" />
+                     </styleClass>
+                     <children>
+                        <HBox fx:id="btnusuario" onMouseClicked="#mostrarUsuarios" prefHeight="22.0" prefWidth="161.0">
+                           <children>
+                              <ImageView fitHeight="38.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../img/nueva-cuenta%20(1).png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" left="10.0" top="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label prefHeight="27.0" prefWidth="100.0" text="USUARIO">
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="15.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <styleClass>
+                              <String fx:value="shadow" />
+                              <String fx:value="mouse_moved" />
+                           </styleClass>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </HBox>
+                        <HBox onMouseClicked="#mostrarTienda" prefHeight="22.0" prefWidth="161.0">
+                           <children>
+                              <ImageView fitHeight="38.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../img/store-front.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" left="10.0" top="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label prefHeight="27.0" prefWidth="100.0" text="TIENDA">
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="15.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <styleClass>
+                              <String fx:value="shadow" />
+                              <String fx:value="mouse_moved" />
+                           </styleClass>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </HBox>
+                        <HBox prefHeight="22.0" prefWidth="161.0" styleClass="shadow" />
+                     </children>
+                  </VBox>
+                  <Pane fx:id="pnusuarios" prefHeight="400.0" prefWidth="437.0">
+                     <children>
+                        <Pane layoutX="-4.0" prefHeight="400.0" prefWidth="436.0">
+                           <children>
+                              <BorderPane layoutX="1.0" prefHeight="400.0" prefWidth="436.0">
+                                 <right>
+                                    <VBox prefHeight="238.0" prefWidth="182.0" BorderPane.alignment="CENTER">
+                                       <children>
+                                          <TableView fx:id="tablausuarios" prefHeight="238.0" prefWidth="202.0" styleClass="shadow" />
+                                       </children>
+                                    </VBox>
+                                 </right>
+                                 <left>
+                                    <HBox prefHeight="238.0" prefWidth="255.0" BorderPane.alignment="CENTER">
+                                       <children>
+                                          <VBox prefHeight="238.0" prefWidth="262.0">
+                                             <children>
+                                                <HBox prefHeight="48.0" prefWidth="206.0">
+                                                   <children>
+                                                      <Label prefHeight="18.0" prefWidth="120.0" text="USUARIO">
+                                                         <HBox.margin>
+                                                            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                         </HBox.margin>
+                                                      </Label>
+                                                      <TextField fx:id="txtusuario" prefHeight="30.0" prefWidth="113.0" stylesheets="@../../../css/cssmenu.css">
+                                                         <styleClass>
+                                                            <String fx:value="comboBox" />
+                                                            <String fx:value="shadow" />
+                                                            <String fx:value="progress" />
+                                                         </styleClass>
+                                                         <HBox.margin>
+                                                            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                         </HBox.margin>
+                                                      </TextField>
+                                                   </children>
+                                                </HBox>
+                                                <HBox prefHeight="51.0" prefWidth="249.0">
+                                                   <children>
+                                                      <Label prefHeight="18.0" prefWidth="116.0" text="CONTRASEÑA">
+                                                         <HBox.margin>
+                                                            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                         </HBox.margin>
+                                                      </Label>
+                                                      <TextField fx:id="txtpassword" prefHeight="30.0" prefWidth="111.0" stylesheets="@../../../css/cssmenu.css">
+                                                         <styleClass>
+                                                            <String fx:value="comboBox" />
+                                                            <String fx:value="shadow" />
+                                                            <String fx:value="progress" />
+                                                         </styleClass>
+                                                         <HBox.margin>
+                                                            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                         </HBox.margin>
+                                                      </TextField>
+                                                   </children>
+                                                </HBox>
+                                                <HBox prefHeight="48.0" prefWidth="206.0">
+                                                   <children>
+                                                      <Label prefHeight="18.0" prefWidth="42.0" text="TIPO">
+                                                         <HBox.margin>
+                                                            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                         </HBox.margin>
+                                                      </Label>
+                                                      <Button fx:id="btnempleado" mnemonicParsing="false" prefHeight="30.0" prefWidth="99.0" style="-fx-background-color: f;" text="EMPLEADO">
+                                                         <styleClass>
+                                                            <String fx:value="shadow" />
+                                                            <String fx:value="add-btn" />
+                                                            <String fx:value="progress" />
+                                                         </styleClass>
+                                                         <HBox.margin>
+                                                            <Insets bottom="10.0" left="30.0" right="10.0" top="10.0" />
+                                                         </HBox.margin>
+                                                      </Button>
+                                                      <Button fx:id="btnadmin" mnemonicParsing="false" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: f;" text="ADMIN">
+                                                         <styleClass>
+                                                            <String fx:value="shadow" />
+                                                            <String fx:value="add-btn" />
+                                                            <String fx:value="progress" />
+                                                         </styleClass>
+                                                         <HBox.margin>
+                                                            <Insets bottom="10.0" right="10.0" top="10.0" />
+                                                         </HBox.margin>
+                                                      </Button>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </left>
+                                 <bottom>
+                                    <HBox prefHeight="162.0" prefWidth="436.0" BorderPane.alignment="CENTER">
+                                       <children>
+                                          <TableView fx:id="tablaventas" prefHeight="162.0" prefWidth="439.0">
+                                             <styleClass>
+                                                <String fx:value="pane_11" />
+                                                <String fx:value="shadow" />
+                                                <String fx:value="progress" />
+                                             </styleClass>
+                                          </TableView>
+                                       </children>
+                                    </HBox>
+                                 </bottom>
+                              </BorderPane>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="pntienda" prefHeight="400.0" prefWidth="436.0" styleClass="backgroundColor" />
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

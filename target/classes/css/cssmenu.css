@@ -1,0 +1,234 @@
+.chart{
+    -fx-padding: 10px;
+    -fx-background-color: transparent;
+    -fx-legend-visible: false;
+    
+    
+}
+.search-box{
+    -fx-background-color:#FFFFFF;
+    -fx-background-radius: 100;
+}
+
+.transparent{
+    -fx-background-color: rgba(0,0,0,0);
+}
+
+.search-button{
+    -fx-background-color: #828282;
+    -fx-background-radius: 30;
+}
+
+.right-bar{
+    -fx-background-color: #D3D3D3;
+}
+
+.shadow{
+    -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 10.0 , 0.0 , 0.0 ,10.0);
+}
+
+.chosen-fruit-card{
+    -fx-background-color: #F16C31;
+    -fx-background-radius: 30;
+}
+
+.comboBox{
+    -fx-background-color: rgba(183,183,183,0.3);
+    -fx-background-radius: 30;
+    -fx-text-fill: black;
+}
+
+.add-btn{
+    -fx-background-color: #6E4CBE;
+    -fx-background-radius: 100;
+
+}   
+
+.free-delivery-card{
+    -fx-background-color: #D3D3D3;
+    -fx-background-radius: 30;
+}
+
+.shopping-online-card{
+    -fx-background-color: #BAEAC3;
+    -fx-background-radius: 30;
+}
+
+.fruit-item{
+    -fx-background-color: #FFFFFF;
+        -fx-background-radius: 30;
+
+        
+}
+.backgroundColor{
+    -fx-background-color: linear-gradient(to left bottom,#E6ECE6,#FFFFFF );
+}
+.borde-solido {
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+}
+
+/* Borde punteado */
+.borde-punteado {
+    -fx-border-color: red;
+    -fx-border-width: 2px;
+    -fx-border-style: dotted;
+}
+
+/* Borde doble 
+.borde-doble {
+    -fx-border-color: blue;
+    -fx-border-width: 4px;
+    -fx-border-style: double;
+}*/
+
+/* Borde con esquina redondeada */
+.borde-redondeado {
+    -fx-border-color: black;
+    -fx-border-width: 0.5px;
+    -fx-border-style: solid;
+    -fx-border-radius: 15px;
+}
+
+/* Borde con imagen 
+.borde-imagen {
+    -fx-border-image-source: url('path/to/image.png');
+    -fx-border-image-repeat: stretch;
+    -fx-border-image-slice: 20 20 fill;
+    -fx-border-image-width: 10px;
+}
+*/
+.root{
+    -fx-background-color:#EAEEF4;
+}
+
+.side_ankerpane{
+     -fx-background-color:#353A56;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid;
+}
+.mouse_moved:hover{
+        -fx-background-color:#E4E4E4;
+
+    
+    
+}.inner_pane{
+    -fx-background-color:#748CF1;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid;
+    -fx-border-color: #748CF1;
+    
+}
+.most_inner_pane{
+    -fx-background-color:#6780E2;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid;
+    -fx-border-color: #748CF1;
+}
+
+#btn_workbench{
+     -fx-background-color:#141313;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-border-style: solid;
+    -fx-border-color: #141313;
+}
+.btn_workbench11{
+    -fx-background-color:#353A56;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-border-style: solid;
+    -fx-border-color: #353A56;
+}
+.pane_1{
+    -fx-background-color:#748CF1;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid;
+    -fx-border-color: #748CF1;
+}
+.progress{
+     -fx-background-color:#ffffff;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 16px;
+    -fx-background-radius: 16px;
+     -fx-border-style: solid;
+    -fx-border-color: #ffffff;
+}
+.pane_11{
+      -fx-background-color:#ffffff;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 16px;
+    -fx-background-radius: 16px;
+     -fx-border-style: solid;
+    -fx-border-color: #ffffff;
+}
+.pane_111{
+    -fx-background-color:#FD9999;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 16px;
+    -fx-background-radius: 16px;
+     -fx-border-style: solid;
+    -fx-border-color: #FD9999;
+    
+}
+.pane_1111{
+     -fx-background-color:#353A56;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 16px;
+    -fx-background-radius: 16px;
+     -fx-border-style: solid;
+    -fx-border-color: #353A56;
+}
+.button
+{
+-fx-background-color : #05071F;
+
+}
+.button:hover{
+-fx-background-color : #10165F;
+}
+.button:pressed
+{
+-fx-background-color : #1620A1;
+}
+
+.scroll-pane {
+    -fx-background-color: #02030A;
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #10165F;
+    -fx-background-radius: 5em;
+}
+
+.scroll-pane > .corner {
+    -fx-background-color: black;
+}

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyectoaula.MenuControllerE">
+   <center>
+      <HBox fx:id="rootPane" alignment="CENTER_LEFT" minHeight="597.0" minWidth="200.0" prefHeight="597.0" prefWidth="858.0" stylesheets="@../../../css/cssmenu.css">
+         <styleClass>
+            <String fx:value="backgroundColor" />
+            <String fx:value="shadow" />
+         </styleClass>
+         <effect>
+            <InnerShadow />
+         </effect></HBox>
+   </center>
+   <left>
+      <VBox prefHeight="561.0" prefWidth="155.0" style="-fx-background-color: #ffffff;" stylesheets="@../../../css/cssmenu.css" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="544.0" prefWidth="155.0" style="-fx-background-color: #ffff;">
+               <children>
+                  <Separator prefHeight="17.0" prefWidth="155.0" />
+                  <Label text="VENTA">
+                     <font>
+                        <Font name="Roboto Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox onMouseClicked="#abrirVentas" prefHeight="39.0" prefWidth="155.0">
+                     <children>
+                        <ImageView fitHeight="54.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../img/mano.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="43.0" prefWidth="118.0" text="Vender">
+                           <font>
+                              <Font name="Roboto" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <styleClass>
+                        <String fx:value="mouse_moved" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                  </HBox>
+                  <HBox onMouseClicked="#abrirReportes" prefHeight="39.0" prefWidth="155.0">
+                     <children>
+                        <ImageView fitHeight="54.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../img/formulario-de-llenado.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="43.0" prefWidth="118.0" text="Reporte">
+                           <font>
+                              <Font name="Roboto" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <styleClass>
+                        <String fx:value="mouse_moved" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                  </HBox>
+                  <HBox prefHeight="39.0" prefWidth="155.0">
+                     <children>
+                        <ImageView fitHeight="54.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../img/agregar-producto%20(1).png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="43.0" prefWidth="118.0" text="Reporte">
+                           <font>
+                              <Font name="Roboto" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <styleClass>
+                        <String fx:value="mouse_moved" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                  </HBox>
+                  <Separator prefHeight="17.0" prefWidth="155.0" />
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <styleClass>
+                  <String fx:value="pane_11" />
+                  <String fx:value="shadow" />
+               </styleClass>
+            </VBox>
+         </children>
+      </VBox>
+   </left>
+</BorderPane>
